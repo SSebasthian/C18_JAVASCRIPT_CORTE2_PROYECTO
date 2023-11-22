@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+section{
+    width: 100%;
+    height: 110vh;
+    background: url(Imagen-Clima.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+section:before{
+    content: '';
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(120deg, #84faaf2d 0%, #8fd2f413 100%);
+    opacity: 0.3
+}
+.contenido{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    text-align: center;
+}
+.Inf_Clima{
+    position: relative;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    background: rgba(255,255,255,.1);
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.Inf_Clima h1{
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.Inf_Clima input{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    background: rgba(255,255,255,.1);
+    font-family: sans-serif;
+}
+.Inf_Clima input::placeholder{
+    color: #fff;
+}
+.Inf_Clima #Icono-Buscar{
+    color: #fff;
+    position: relative;
+    bottom: 68px;
+    left: 250px;
+}
+.Inf_Clima #Boton_Ingresa_Ciudad{
+    position: relative;
+    top: 25px;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+    background: #333;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+.Inf_Clima #Boton_Ingresa_Ciudad::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: #333;
+    transform: scale(.9);
+    z-index: -1;
+}
+.Inf_Clima #Boton_Ingresa_Ciudad:hover::before{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #a3a291;
+}
+.Inf_Clima #Boton_Ingresa_Ciudad:hover{
+    box-shadow: 0 0 5px #a3a291;
+    text-shadow: 0 0 5px #a3a291;
+}
+#Datos_Clima{
+    position: absolute;
+    top: 170%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#Datos_Clima p{
+    display: block;
+    width: 230px;
+    height: 50px;
+    padding: 10px 10px;
+    margin: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    background: rgba(255,255,255,.1);
+    font-family: sans-serif;
+}
